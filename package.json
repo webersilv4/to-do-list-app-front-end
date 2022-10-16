@@ -1,0 +1,31 @@
+{
+  "name": "to-do-front-end",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "4.6.0",
+    "jquery": "3.6.0",
+    "popper.js": "^1.16.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.25.0",
+    "eslint-plugin-react": "^7.31.9",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}

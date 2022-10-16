@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --background-1: #151515;
+  --background-2: #1c1c1c;
+  --background-3: #000000;
+  --background-4: #2e2e2e;
+
+  --border-rad-dft: 10px;
+  --border-rad-inputs-and-buttons: 4px;
+}
+
+/* COLORS */
+:root {
+  --color-black: #000000;
+  --color-green-dft: #08ef74;
+  --danger-color: #ff385c;
+  --warning-color: #ebdd1b;
+  --text-link: #007bff;
+}
+
+/* TEXTS COLORS */
+:root {
+  --text-color-dft: #fff;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html,
+body {
+  background-color: var(--background-1) !important;
+  font-family: 'Roboto', sans-serif !important;
+  min-height: 100vh;
+
+  margin-bottom: 60px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+hr {
+  height: 2px;
+  background-color: var(--background-2);
+}
+
+svg {
+  font-size: 20px;
+}
+
+/* BACKGROUNDS */
+.bg-dft-1 {
+  background-color: var(--background-1);
+}
+.bg-dft-2 {
+  background-color: var(--background-2);
+}
+.bg-dft-3 {
+  background-color: var(--background-3);
+}
+.bg-dft-4 {
+  background-color: var(--background-4);
+}
+.bg-black {
+  background-color: var(--background-3);
+}
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #090909;
+
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.overlay-itro {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+/* FORMS | INPUTS*/
+.form_control {
+  left: 9.33%;
+  right: 9.11%;
+  top: 29.06%;
+  bottom: 60.25%;
+  min-height: 45px;
+  width: 100%;
+  padding-left: 15px;
+  border: 1px solid var(--background-4);
+  box-sizing: border-box;
+  outline: 0;
+  border-radius: var(--border-rad-inputs-and-buttons);
+  background-color: var(--background-2);
+  color: var(--text-color-dft);
+}
+
+.form_control:focus {
+  outline: 1px solid var(--color-green-dft);
+}
+
+.disabled-input {
+  background-color: var(--background-2);
+}
+/* END FORMS | INPUTS  */
+
+/* BORDERS */
+.border-dft {
+  border: 3px solid var(--background-2);
+}
+.border-rad-dft {
+  border-radius: var(--border-rad-dft);
+}
+.border-right {
+  border-right: 2px solid var(--background-2) !important;
+}
+.border-bottom-dft {
+  border-bottom: 2px solid var(--background-2) !important;
+}
+
+
+/* BOTTONS */
+.botton-2 {
+  border: none;
+  border-radius: var(--border-rad-inputs-and-buttons);
+  padding: 10px;
+  background-color: var(--color-green-dft);
+  color: var(--background-3);
+  outline: none;
+  font-weight: bolder;
+  cursor: pointer !important;
+}
+
+.botton-close {
+    border: none;
+    background-color: var(--transparent);
+    margin-top: -20px;
+    color: var(--danger-color);
+    outline: none;
+    font-weight: bolder;
+    cursor: pointer !important;
+}
+
+/* CARDS */
+.card-dft {
+  border: 2px solid var(--background-2);
+}
+.success {
+  background-color: var(--color-green-dft);
+  padding: 10px;
+  border-radius: var(--border-rad-dft);
+  text-align: center;
+}
+.error {
+  background-color: var(--danger-color);
+  padding: 10px;
+  border-radius: var(--border-rad-dft);
+  text-align: center;
+}
+.warning {
+  background-color: var(--warning-color);
+  padding: 10px;
+  border-radius: var(--border-rad-dft);
+  text-align: center;
+  color: var(--background-3);
+}
+
+/* TEXTS */
+.text-color-dft {
+  color: var(--text-color-dft);
+}
+.text-green-dft {
+  color: var(--color-green-dft);
+}
+.text-danger {
+  color: var(--danger-color);
+}
+.text-link {
+  color: var(--text-link);
+}
+
+/* NAVBAR */
+.navbar-toggler {
+  color: var(--color-green-dft) !important;
+}
+/* END NAVBAR */
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  bottom: auto;
+  margin-top: 130px;
+  width: 100%;
+  height: auto; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* ICONS */
+.icon {
+  color: var(--color-green-dft);
+  font-size: 35px;
+}
+
+.home-icons {
+  font-size: 80px;
+  color: var(--color-green-dft);
+}
+.social-icon {
+  color: var(--color-green-dft);
+  font-size: 25px;
+}
+
+/* AVATAR */
+.avatar {
+  border: 5px solid var(--color-green-dft) !important;
+  background-color: var(--background-2);
+  color: var(--color-green-dft);
+  min-height: 100px;
+  font-weight: 900;
+  width: 100px;
+}
