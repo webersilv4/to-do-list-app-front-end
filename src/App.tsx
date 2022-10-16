@@ -62,7 +62,7 @@ const App = () => {
             .then(() => {
                 setSuccess('Tarefa deletada com sucesso!');
                 fetchData();
-            }).catch(error => console.log('passei aqui'));
+            }).catch(error => setError(error));
     };
 
     useEffect(()=>{
